@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --Red: hsl(1,90%,64%);
+  --Blue: hsl(219,85%, 26%);
+
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Ligh-grayish-blue-1: hsl(211, 68%, 94%);
+  --Ligh-grayish-blue-1: hsl(205, 35%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+
+}
+
+@font-face {
+  font-family: 'Averia Serif Libre';
+  src: url(./assets/fonts/AveriaSerifLibre-Regular.ttf);
+}
+body{
+  font-family: 'Averia Serif Libre';
+}
+.main{
+  padding: 24px 16px;
+  margin-bottom: 24px;
+}
+.Notification{
+  display: flex;
+  justify-content: space-between;
+  /*anidamiento todo lo que esta dentro de notification */
+  & .title{
+    color: var(--Very-dark-blue);
+    font-weight: 900;
+    font-size: 1.25rem;
+    word-spacing: 9px;
+  }
+  & .number{
+    background-color: var(--Blue);
+    color: var(--White);
+    display: inline-block;/* hay que agregar esto a los span para controlar su ancho y alto */
+    width: 32px;
+    height: 25px;
+    text-align: center;
+    border-radius: 25%;
+  }
+  & .mark{
+    color: var(--Dark-grayish-blue);
+    font-size: 0.875 rem;
+    font-weight: 500;
+    font-style: regular;
+    cursor: pointer;
+    &:hover{
+      color: var(--Blue);
+    }
+  }
+}
+
+.PhotoProfile{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.attibutions {font-size: 14px; text-align: center;}
+.attibutions a {color: hsl(228, 45%, 44%);}
