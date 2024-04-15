@@ -23,6 +23,7 @@
 }
 body{
   font-family: 'Averia Serif Libre';
+  background-color: crimson;
 }
 .main{
   padding: 24px 16px;
@@ -59,11 +60,41 @@ body{
   }
 }
 
-.PhotoProfile{
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+.post{
+  background-color: var(--Very-light-grayish-blue);
+  border-radius: 12px;
+  display: flex;
+  gap: 13px;
+  padding: 16px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  color: var(--Dark-grayish-blue);
+  & .image{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  & .name{
+    font-weight: bold;
+    color: var(--Very-dark-blue);
+    &:hover{
+      color: var(--Blue);
+    }
+  }
+  & .reaction{
+    font-weight: bold;
+    &:hover{
+      color: var(--Blue);
+    }
+  }
 }
 
+.not-read{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--red);
+}
 .attibutions {font-size: 14px; text-align: center;}
 .attibutions a {color: hsl(228, 45%, 44%);}
